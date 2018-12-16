@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Weather report</title>
+    </head>
+    <body>
+    	{% for report in reports %}
+        <div><p><b>{{ report.airport.station }} :</b> {{ report.text }}</p></div>
+        {% endfor %}
+    </body>
+</html>
