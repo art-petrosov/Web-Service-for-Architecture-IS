@@ -67,5 +67,5 @@ def index(temp_trig = -15, wind_speed_trig = 15, press_lower_trig = 998):
         reports += [{'airport': {'station': port}, 'text': output}]
     # Match element values with report template
     return render_template('index.html', reports=reports)
-
+# If you have some problems please try to change port
 app.run('83.220.168.38', port=5028)
